@@ -5,6 +5,7 @@ void sig_handler(int signo,siginfo_t *info,void *context)
   printf("signal number is %d\n",info->si_signo);
   printf("pid=%d\n",info->si_pid);
   printf("signal=%d\n",info->si_value.sival_int);
+  signal(36,SIG_DFL);
 }
 int main()
 {

@@ -8,3 +8,5 @@
 #include<fcntl.h>
 #include<signal.h>
 #include<time.h>
+#include<sys/times.h>
+#include<pthread.h>
